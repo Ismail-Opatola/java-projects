@@ -7,6 +7,7 @@ import java.util.HashMap;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
@@ -62,25 +63,76 @@ public class LoginPage implements ActionListener{
 			userIDField.setText("");
 			userPasswordField.setText("");
 		}
+		
 		if(e.getSource() == loginBtn) {
 			String userID = userIDField.getText();
 			String password = String.valueOf(userPasswordField.getPassword());
 			
+			if(userID.isBlank() || password.isBlank()) {
+				JOptionPane
+				.showOptionDialog(
+					null, 
+					"Enter Username and Password",
+					"Feedback", 
+					JOptionPane.CANCEL_OPTION, 
+					JOptionPane.WARNING_MESSAGE, 
+					null,
+					null,
+					null
+				);
+				return;
+			}
+			
 			// verify credentials
 			if(loginInfo.containsKey(userID)) {
 				if(loginInfo.get(userID).equals(password)) {
-					messageLabel.setForeground(Color.green);
-					messageLabel.setText("Login successful");
+//					messageLabel.setForeground(Color.green);
+//					messageLabel.setText("Login successful");
 					frame.dispose(); // close login window
 					WelcomePage welcomePage = new WelcomePage(userID); // open new window and display welcome message with userID
+					
+					JOptionPane
+					.showOptionDialog(
+						null, 
+						"Login successful",
+						"Feedback", 
+						JOptionPane.OK_OPTION, 
+						JOptionPane.PLAIN_MESSAGE, 
+						null,
+						null,
+						null
+					);
 				} else {
-					messageLabel.setForeground(Color.red);
-					messageLabel.setText("Wrong password");
+//					messageLabel.setForeground(Color.red);
+//					messageLabel.setText("Wrong password");
+					
+					JOptionPane
+					.showOptionDialog(
+						null, 
+						"Wrong password",
+						"Feedback", 
+						JOptionPane.CANCEL_OPTION, 
+						JOptionPane.WARNING_MESSAGE, 
+						null,
+						null,
+						null
+					);
 				}
 			} else {
-				messageLabel.setForeground(Color.red);
-				messageLabel.setText("username not found");
+//				messageLabel.setForeground(Color.red);
+//				messageLabel.setText("username not found");
 				
+				JOptionPane
+				.showOptionDialog(
+					null, 
+					"username not found",
+					"Feedback", 
+					JOptionPane.CANCEL_OPTION, 
+					JOptionPane.ERROR_MESSAGE, 
+					null,
+					null,
+					null
+				);
 			}
 		}
 		
