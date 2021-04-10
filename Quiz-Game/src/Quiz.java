@@ -82,7 +82,7 @@ public class Quiz implements ActionListener {
 		textArea.setEditable(false);
 		
 		btnA.setBounds(0,100,100,100);
-		btnA.setFont(new Font("MV Boli", Font.BOLD, 35));
+		btnA.setFont(new Font("MV Boli",Font.BOLD,35));
 		btnA.setFocusable(false);
 		btnA.addActionListener(this);
 		
@@ -238,7 +238,8 @@ public class Quiz implements ActionListener {
 		/**
 		 * execute timer only once per displayAnswer function call
 		 * by disabling repeats so it won't be called every 2s
-		 * we only need it to -delay for 2s and- execute only once
+		 * we only need it to -delay for 2s and-
+		 * execute only once
 		 */
 		pause.setRepeats(false);
 		pause.start();
