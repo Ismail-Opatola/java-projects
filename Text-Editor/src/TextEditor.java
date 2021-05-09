@@ -171,3 +171,23 @@ public class TextEditor extends JFrame implements ActionListener {
 		
 	}
 }
+
+/**
+ * 
+ * -------------
+ * C# ASSIGNMENT
+ * -------------
+ * 
+ * 1) read about For-loops in c-harp
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+ * 
+*/
