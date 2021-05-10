@@ -1,8 +1,12 @@
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class TelephoneDirectory {
 	private Scanner scanner;
-
+	private Contact[] contactList; // array of contacts
+	
 	/**
 	 * constructor
 	 */
@@ -10,7 +14,7 @@ public class TelephoneDirectory {
 		scanner = new Scanner(System.in);
 		// file
 		
-		System.out.println("[########] Launching Telephone Directory");
+		System.out.println("[########] Execute - Launch Telephone Directory App");
 		System.out.println("[########] Done!");
 		
 		askQuestion();
@@ -21,7 +25,7 @@ public class TelephoneDirectory {
 		while (true) {
 
 			System.out.println("\nWhat do you want to do? Enter a Key...");
-			System.out.println("(H)elp \n(N)ew Contact \n(L)ist \n(F)ind \n(Q)uit");
+			System.out.print("(H)elp \n(N)ew Contact \n(L)ist \n(F)ind \n(Q)uit \n> ");
 			
 			char response = Character.toUpperCase(scanner.nextLine().charAt(0));
 			
@@ -55,7 +59,8 @@ public class TelephoneDirectory {
 	 * Exit application
 	 */
 	private void quit() {
-		System.out.println("Thank you, have a nice day!");
+		System.out.println("[########] Execute - Stop Application");
+		System.out.println("[########] Done!");
 		System.exit(0);
 	}
 
@@ -84,13 +89,21 @@ public class TelephoneDirectory {
 	 * Displays help about Telephone Directory cmdlets
 	 */
 	private void help() {
-		
-		System.out.println("\nTOPIC\r\n"
-				+ "    Telephone Directory Help System\r\n"
-				+ "\r\n"
-				+ "DESCRIPTION\r\n"
-				+ "    Displays help about Telephone Directory cmdlets and concepts.");
-		
-		System.out.println("-- More  --");
+		/**
+		 * stream help.txt to console
+		 */
+		try {
+			FileReader reader = new FileReader("lib/help.txt");
+			int data = reader.read(); // stream returns -1 if empty
+			while(data != -1) {
+				System.out.print((char)data);
+				data = reader.read();
+			}
+			reader.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} 	
 	}
 }
