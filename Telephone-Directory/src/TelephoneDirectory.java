@@ -12,7 +12,7 @@ public class TelephoneDirectory {
 	 */
 	TelephoneDirectory() {
 		scanner = new Scanner(System.in);
-		// file
+		// init db, parse json
 		
 		System.out.println("[########] Execute - Launch Telephone Directory App");
 		System.out.println("[########] Done!");
