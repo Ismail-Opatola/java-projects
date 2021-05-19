@@ -1,11 +1,6 @@
+package com.github.ismailopatola.javaproject.telephonedirectory;
 
-public interface ContactDetails {
-	public String firstname;
-	 public String lastname;
-	 public int phone;
-}
-
-public class Contact implements ContactDetails{
+public class Contact implements ContactInterface{
 	
 	String firstname;
 	String lastname;
@@ -30,11 +25,11 @@ public class Contact implements ContactDetails{
 	 */
 	
 	public String getFirstname() {
-		return firstname;
+		return this.firstname;
 	}
 	
 	public String getLastname() {
-		return lastname;
+		return this.lastname;
 	}
 	
 	public int getPhone() {
@@ -57,5 +52,4 @@ public class Contact implements ContactDetails{
 	public void setPhone(int phone) {
 		this.phone = phone;
 	}
-	
 }

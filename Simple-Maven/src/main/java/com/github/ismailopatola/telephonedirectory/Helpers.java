@@ -1,5 +1,8 @@
 package com.github.ismailopatola.telephonedirectory;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import org.json.simple.JSONObject;
 
 /**
@@ -43,7 +46,7 @@ public class Helpers {
     public static void parseContactObject(int i, JSONObject contact) {
     	String firstname = (String) contact.get("firstname");    
     	String lastname = (String) contact.get("lastname");    
-        int phone = (int) contact.get("phone");    
+    	String phone = (String) contact.get("phone");    
 
     	System.out.println(
 				"(" + i + 1 + ")" 
@@ -54,14 +57,17 @@ public class Helpers {
 				+ "Lastname: " 
 				+ lastname 
 				+ " " + "Phone: " 
-				+ String.valueOf(phone));
+				+ phone);
     }
     
-    public static JSONObject objectTJSONObject(Object object) {
-    	JSONObject json = (JSONObject) object;
-    	return json;
+    public static JSONObject objectToJSONObject(Map<String, String> object) {
+    	return (JSONObject) object;
     }
-    
+
+}
+
+//   	 object = new JSONObject((Map) object);    	
+
 //    public static JSONArray objectTJSONArray(Object object) {
 //    	Object json = null;
 //    	JSONArray jsonArray = null;
@@ -76,5 +82,3 @@ public class Helpers {
 //    	}
 //    	return jsonArray;
 //	}
-
-}
