@@ -18,7 +18,7 @@ public class TelephoneDirectory {
 	Helpers helpers;
 		
 	/**
-	 * constructor
+	 * Telephone Directory constructor
 	 */
 	TelephoneDirectory() {
 		helpers = new Helpers();
