@@ -61,26 +61,4 @@ public class Helpers {
 		}
 	}
 	
-	/**
-	 * parse and print contact object to console
-	 * @param i
-	 * @param contact
-	 */
-    public void displayContactDetails(int i, Contact contact) {
-    	String firstname = (String) contact.getFirstname();    
-    	String lastname = (String) contact.getLastname();    
-    	String phone = (String) contact.getPhone();    
-
-    	System.out.println(
-				"(" + (i+1) + ")" 
-				+ " " 
-				+ "Firstname: " 
-				+ firstname 
-				+ " " 
-				+ "Lastname: " 
-				+ lastname 
-				+ " " + "Phone: " 
-				+ phone);
-    }
-    
 }

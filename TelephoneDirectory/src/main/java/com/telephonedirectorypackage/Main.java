@@ -7,7 +7,7 @@ public class Main {
 		/**
 		 * Write a Java Program which makes the console based telephone directory, 
 		 * the program must use the array to maintain the ‘n’ number of data. 
-		 * It should ask the fields like Name, Age and Contact Number of Person. 
+		 * It should ask the fields like Name, Age and Contact Number of Person.
 		 * The program must also save the same data in a file. 
 		 * The program must also include the option for retrieving the data of any index of array and also between the ranges. 
 		 * 

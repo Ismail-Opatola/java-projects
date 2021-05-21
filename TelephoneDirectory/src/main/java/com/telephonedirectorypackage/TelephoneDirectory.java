@@ -28,8 +28,7 @@ public class TelephoneDirectory {
 		// initialize database
 		db = new Database("lib/db.json");
 		
-		sendFeedback("[########] Execute - Launch Telephone Directory App");
-		sendFeedback("[########] Done!");
+		launchAppStaticFeedback();
 		
 		askQuestion();
 	}
@@ -80,6 +79,8 @@ public class TelephoneDirectory {
 		 * stream help.txt to console
 		 */
 		try {
+			final long startTime = System.currentTimeMillis();
+
 			FileReader reader = new FileReader("lib/help.txt");
 			int data = reader.read(); // stream returns -1 if empty
 			while(data != -1) {
@@ -87,6 +88,9 @@ public class TelephoneDirectory {
 				data = reader.read();
 			}
 			reader.close();
+			
+			final long endTime = System.currentTimeMillis();
+			sendExecutionTimeFeedback(startTime, endTime);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -101,10 +105,15 @@ public class TelephoneDirectory {
 		requestNewContactDetails();
 				
 		try {	
+			final long startTime = System.currentTimeMillis();
+
 			// create new contact
 			Contact contact = new Contact(firstname, lastname, phone);				
 			// save to database
 			db.create(contact);
+			
+			final long endTime = System.currentTimeMillis();
+			sendExecutionTimeFeedback(startTime, endTime);
 			sendFeedback("sucessfully added to Telephone Directory!");
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -117,8 +126,13 @@ public class TelephoneDirectory {
 	 */
 	private void list() {
 		try {
+			final long startTime = System.currentTimeMillis();
+			
 			ArrayList<Contact> contactList = db.getAll();
 			sortAndDisplayData(contactList);			
+			
+			final long endTime = System.currentTimeMillis();
+			sendExecutionTimeFeedback(startTime, endTime);
 		} catch (Exception e) {
 			sendFeedback(e.getMessage());
 		}
@@ -129,8 +143,9 @@ public class TelephoneDirectory {
 	 * find contact by query
 	 */
 	private void find() {
+		final long startTime = System.currentTimeMillis();
+
 		String queryString = requestQuery();
-		
 		try {
 			ArrayList<Contact> response = db.find(queryString);
 			if(response != null) {
@@ -138,6 +153,9 @@ public class TelephoneDirectory {
 			} else {
 				sendFeedback("Contact Not Found!");
 			}
+			
+			final long endTime = System.currentTimeMillis();
+			sendExecutionTimeFeedback(startTime, endTime);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -147,8 +165,7 @@ public class TelephoneDirectory {
 	 * Exit application
 	 */
 	private void quit() {
-		sendFeedback("[########] Execute - Stop Application");
-		sendFeedback("[########] Done!");
+		killAppStaticFeedback();		
 		System.exit(0);
 	}
 
@@ -165,7 +182,7 @@ public class TelephoneDirectory {
 		// parse and print contact list
 		helpers.forEachWithCounter(contactList, new BiConsumer<Integer, Contact>() {
 			public void accept(Integer i, Contact contact) {
-				helpers.displayContactDetails(i, contact);
+				displayContactDetails(i, contact);
 			}
 		});
 	}
@@ -208,5 +225,64 @@ public class TelephoneDirectory {
 	void sendFeedback(String data) {
 		System.out.println(data);			
 	}
+	
+	void launchAppStaticFeedback() {
+		final long startTime = System.currentTimeMillis();
+		System.out.print("Execute - Start Telephone Directory App ");
+		System.out.print("[");
+		for (int i = 0; i < 25; i++) {
+			try {
+				Thread.sleep(50);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.print("#");
+		}
+		System.out.print("]\n");
+		final long endTime = System.currentTimeMillis();
+		sendExecutionTimeFeedback(startTime, endTime);
+	}
+	
+	void killAppStaticFeedback() {
+		final long startTime = System.currentTimeMillis();
+		System.out.print("Execute - Kill Application ");
+		System.out.print("[");
+		for (int i = 0; i < 20; i++) {
+			try {
+				Thread.sleep(50);
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+			System.out.print("#");
+		}
+		System.out.print("]\n");
+		final long endTime = System.currentTimeMillis();
+		sendExecutionTimeFeedback(startTime, endTime);
+	}
+	
+	void sendExecutionTimeFeedback(long startTime, long endTime) {
+		sendFeedback("\nDone in " + (endTime - startTime) + "s.");
+	}
+	
+	/**
+	 * parse and print contact object to console
+	 * @param i
+	 * @param contact
+	 */
+    public void displayContactDetails(int i, Contact contact) {
+    	String firstname = (String) contact.getFirstname();    
+    	String lastname = (String) contact.getLastname();    
+    	String phone = (String) contact.getPhone();    
 
+    	System.out.println(
+				"(" + (i+1) + ")" 
+				+ " " 
+				+ "Firstname: " 
+				+ firstname 
+				+ " " 
+				+ "Lastname: " 
+				+ lastname 
+				+ " " + "Phone: " 
+				+ phone);
+    }
 }
