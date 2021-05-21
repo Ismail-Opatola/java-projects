@@ -7,7 +7,8 @@ public interface IDatabase {
 	void create(Contact data);
 	void update(Contact data);
 	void delete(String query);
-	ArrayList<Contact> find (String query);
+	Contact find (String query);
+	ArrayList<Contact> findAll (String query);
 	Contact get(String query);
 	ArrayList<Contact> fetchDB();
 }
