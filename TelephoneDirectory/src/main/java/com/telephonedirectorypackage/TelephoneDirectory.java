@@ -83,11 +83,16 @@ public class TelephoneDirectory {
 
 			FileReader reader = new FileReader("lib/help.txt");
 			int data = reader.read(); // stream returns -1 if empty
+			
+			displayBlankLine();
+			
 			while(data != -1) {
 				System.out.print((char)data);
 				data = reader.read();
 			}
 			reader.close();
+			
+			displayBlankLine();
 			
 			final long endTime = System.currentTimeMillis();
 			sendExecutionTimeFeedback(startTime, endTime);
@@ -99,12 +104,15 @@ public class TelephoneDirectory {
 	}
 
 	/**
-	 * create a new contact
+	 * creates a new contact
+	 * and save to the database
 	 */
 	private void newContact() {
+		// prompt user for new contact details
 		requestNewContactDetails();
 				
-		try {	
+		try {
+			// track code excution time
 			final long startTime = System.currentTimeMillis();
 
 			// create new contact
@@ -112,6 +120,7 @@ public class TelephoneDirectory {
 			// save to database
 			db.create(contact);
 			
+			// track code excution time
 			final long endTime = System.currentTimeMillis();
 			sendExecutionTimeFeedback(startTime, endTime);
 			sendFeedback("sucessfully added to Telephone Directory!");
@@ -122,15 +131,17 @@ public class TelephoneDirectory {
 	}
 
 	/**
-	 * list all contacts
+	 * list all contacts in the Telephone Directory
 	 */
 	private void list() {
 		try {
+			// track code excution time
 			final long startTime = System.currentTimeMillis();
 			
 			ArrayList<Contact> contactList = db.getAll();
 			sortAndDisplayData(contactList);			
 			
+			// track code excution time
 			final long endTime = System.currentTimeMillis();
 			sendExecutionTimeFeedback(startTime, endTime);
 		} catch (Exception e) {
@@ -140,37 +151,61 @@ public class TelephoneDirectory {
 
 	
 	/**
-	 * find contact by query
+	 * find contact by query<br>
+	 * prompts user for:
+	 * <ul>
+	 * 	<li>query string</li>
+	 * 	<li>find exact match</li>
+	 * 	<li>find all possible match</li>
+	 * </ul>
 	 */
 	private void find() {
+		// track code excution time
 		final long startTime = System.currentTimeMillis();
 
 		String queryString = requestQuery();
+		Boolean toFindAll = askToFindAllMatch();
+		
 		try {
-			ArrayList<Contact> response = db.find(queryString);
-			if(response != null) {
-				sortAndDisplayData(response);				
+			if(!toFindAll) {
+				// find exact match
+				Contact response = db.find(queryString);
+				if(response != null) {
+					displayData(response);				
+				} else {
+					sendFeedback("Contact Not Found!");
+				}				
 			} else {
-				sendFeedback("Contact Not Found!");
+				// find all possible matches
+				ArrayList<Contact> response = db.findAll(queryString);
+				if(response != null) {
+					sortAndDisplayData(response);				
+				} else {
+					sendFeedback("No matches found!");
+				}								
 			}
 			
+			// track code excution time
 			final long endTime = System.currentTimeMillis();
 			sendExecutionTimeFeedback(startTime, endTime);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 	}
-	
+
 	/**
-	 * Exit application
+	 * kill or stop running application
 	 */
 	private void quit() {
 		killAppStaticFeedback();		
 		System.exit(0);
 	}
-
+	/**
+	 * sort and display a list of contacts to the console
+	 * @param contactList
+	 */
 	private void sortAndDisplayData(ArrayList<Contact> contactList) {
-		// sort contact list
+		// sort contact list by firstname
 		Comparator<Contact> c = new Comparator<Contact>() {
 			public int compare(Contact s1, Contact s2) {
 				return helpers.compare(s1, s2);
@@ -179,6 +214,8 @@ public class TelephoneDirectory {
 
 		contactList.sort(c);
 		
+		displayBlankLine();
+
 		// parse and print contact list
 		helpers.forEachWithCounter(contactList, new BiConsumer<Integer, Contact>() {
 			public void accept(Integer i, Contact contact) {
@@ -186,17 +223,30 @@ public class TelephoneDirectory {
 			}
 		});
 	}
-	
+	/**
+	 * display a single contact object to console
+	 * @param response
+	 */
+	private void displayData(Contact response) {
+		displayBlankLine();
+		displayContactDetails(1, response);
+	}
+	/**
+	 * prompt user to enter search query<br>
+	 */
 	private String requestQuery() {
 		String queryString = null;
 		while (queryString == null || queryString.isBlank()) {
-			sendFeedback("Enter query>");
-			sendFeedback("Search by Phone number, Firstname or Lastname>");
+			sendFeedback("\nEnter query>");
+			sendFeedbackInline("Search by Phone number, Firstname or Lastname> ");
 			queryString = scanner.nextLine();			
 		}
 		return queryString;
 	}
-
+	/**
+	 * prompt user to enter details for a new contact<br>
+	 * <small>prompt for <i>firstname, lastname, phone</i></small>
+	 */
 	private void requestNewContactDetails() {
 		sendFeedback("Enter a New Contact Details>");
 		
@@ -216,6 +266,29 @@ public class TelephoneDirectory {
 			phone = scanner.nextLine();					
 		}
 	}
+	/**
+	 * prompt user for action to either find all matches to query,
+	 * find the exact match or quit app
+	 * @return boolean
+	 */
+	private Boolean askToFindAllMatch() {
+		char response = 0;
+		while (response == 0 || (response != 'Q' && response != '1' && response != '2')) {
+			displayBlankLine();
+			sendFeedbackInline("Do you want to find all matches? \n(1) Yes find all \n(2) No, find exact match \n(Q) Exit application \n> ");
+			response = Character.toUpperCase(scanner.nextLine().charAt(0));
+		}
+		// if Yes
+		if (response == '1' ) {
+			return true;
+		}
+		// if Exit application
+		if(response == 'Q') {
+			quit();
+		}
+		// if No
+		return false;
+	}
 	
 	/**
 	 * A wrapper arround System.out.println. 
@@ -225,7 +298,22 @@ public class TelephoneDirectory {
 	void sendFeedback(String data) {
 		System.out.println(data);			
 	}
-	
+	/**
+	 * print data inline
+	 */
+	void sendFeedbackInline(String data) {
+		System.out.print(data);			
+	}
+	/**
+	 * print an empty line to std-output
+	 */
+	private void displayBlankLine() {
+		System.out.println();
+	}
+	/**
+	 * <p><i>visual que</i></p>
+	 * imitate application startup progress feedback
+	 */
 	void launchAppStaticFeedback() {
 		final long startTime = System.currentTimeMillis();
 		System.out.print("Execute - Start Telephone Directory App ");
@@ -242,9 +330,13 @@ public class TelephoneDirectory {
 		final long endTime = System.currentTimeMillis();
 		sendExecutionTimeFeedback(startTime, endTime);
 	}
-	
+	/**
+	 * <p><i>visual que</i></p>
+	 * imitate application exit progress feedback 
+	 */	
 	void killAppStaticFeedback() {
 		final long startTime = System.currentTimeMillis();
+		System.out.println();
 		System.out.print("Execute - Kill Application ");
 		System.out.print("[");
 		for (int i = 0; i < 20; i++) {
@@ -259,7 +351,11 @@ public class TelephoneDirectory {
 		final long endTime = System.currentTimeMillis();
 		sendExecutionTimeFeedback(startTime, endTime);
 	}
-	
+	/**
+	 * display total execution time after a task 
+	 * @param startTime
+	 * @param endTime
+	 */
 	void sendExecutionTimeFeedback(long startTime, long endTime) {
 		sendFeedback("\nDone in " + (endTime - startTime) + "s.");
 	}
@@ -273,7 +369,7 @@ public class TelephoneDirectory {
     	String firstname = (String) contact.getFirstname();    
     	String lastname = (String) contact.getLastname();    
     	String phone = (String) contact.getPhone();    
-
+    	
     	System.out.println(
 				"(" + (i+1) + ")" 
 				+ " " 
