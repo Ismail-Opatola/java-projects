@@ -307,7 +307,7 @@ public class TelephoneDirectory {
 		displayBlankLine();
 		sendFeedback("================ Telephone Directory Result ================");
 		displayBlankLine();
-		displayContactDetails(1, response);
+		displayContactDetails(0, response);
 	}
 	/**
 	 * prompt user to enter search query<br>
