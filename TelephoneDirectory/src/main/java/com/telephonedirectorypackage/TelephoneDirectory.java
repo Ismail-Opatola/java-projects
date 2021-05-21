@@ -5,16 +5,13 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 public class TelephoneDirectory {
 
 	private Scanner scanner;
 	Database db;
-	
-	String firstname;
-	String lastname;
-	String phone;
-	
 	Helpers helpers;
 		
 	/**
@@ -110,15 +107,15 @@ public class TelephoneDirectory {
 	 * and save to the database
 	 */
 	private void newContact() {
-		// prompt user for new contact details
-		requestNewContactDetails();
 				
 		try {
 			// track code excution time
 			final long startTime = System.currentTimeMillis();
 
-			// create new contact
-			Contact contact = new Contact(firstname, lastname, phone);				
+			// prompt user for new contact details
+			// create new contact object
+			Contact contact = requestNewContactDetails();
+									
 			// save to database
 			db.create(contact);
 			
@@ -176,14 +173,16 @@ public class TelephoneDirectory {
 					displayData(response);				
 					// TODO: More actions: Update, Delete, Back
 				} else {
-					sendFeedback("Contact Not Found!");
+					displayBlankLine();
+					sendFeedback("Contact not found!");
 				}				
 			} else {
 				// find all possible matches
 				ArrayList<Contact> response = db.findAll(queryString);
-				if(response != null) {
+				if(response != null && !response.isEmpty()) {
 					sortAndDisplayData(response);				
 				} else {
+					displayBlankLine();
 					sendFeedback("No matches found!");
 				}								
 			}
@@ -208,6 +207,9 @@ public class TelephoneDirectory {
 	 * @param contactList
 	 */
 	private void sortAndDisplayData(ArrayList<Contact> contactList) {
+		// range 0 - Z
+		final Map<Character, Boolean> range = generateMapOfRange0ToZ();
+		
 		// sort contact list by firstname
 		Comparator<Contact> c = new Comparator<Contact>() {
 			public int compare(Contact s1, Contact s2) {
@@ -216,22 +218,94 @@ public class TelephoneDirectory {
 		};
 
 		contactList.sort(c);
-		
+
+		displayBlankLine();
+		sendFeedback("================ Telephone Directory Result ================");
 		displayBlankLine();
 
 		// parse and print contact list
 		helpers.forEachWithCounter(contactList, new BiConsumer<Integer, Contact>() {
 			public void accept(Integer i, Contact contact) {
-				// TODO: grep data to console
+				// TODO: grep data to console		
+				displayByRange(range, contact);
 				displayContactDetails(i, contact);
 			}
 		});
 	}
+	
+	/**
+	 * generate an object map 
+	 * <ul>
+	 * 	<li>whose keys ranges from 0 to Z char</li> 
+	 * 	<li>holds boolean value - true or false</li>
+	 * </ul>
+	 * @return Map 
+	 */
+	private Map<Character, Boolean> generateMapOfRange0ToZ() {
+		final Map<Character, Boolean> range = new HashMap<Character, Boolean>();
+		range.put('A', false);
+		range.put('B', false);
+		range.put('C', false);
+		range.put('D', false);
+		range.put('E', false);
+		range.put('F', false);
+		range.put('G', false);
+		range.put('H', false);
+		range.put('I', false);
+		range.put('J', false);
+		range.put('K', false);
+		range.put('L', false);
+		range.put('M', false);
+		range.put('N', false);
+		range.put('O', false);
+		range.put('P', false);
+		range.put('Q', false);
+		range.put('R', false);
+		range.put('S', false);
+		range.put('T', false);
+		range.put('U', false);
+		range.put('V', false);
+		range.put('W', false);
+		range.put('X', false);
+		range.put('Y', false);
+		range.put('Z', false);
+		range.put('0', false);
+		range.put('1', false);
+		range.put('2', false);
+		range.put('3', false);
+		range.put('4', false);
+		range.put('5', false);
+		range.put('6', false);
+		range.put('7', false);
+		range.put('8', false);
+		range.put('9', false);
+		
+		return range;
+	}
+
+	/**
+	 * track and display range 0 - Z to console
+	 * @param range
+	 * @param contact
+	 */
+	private void displayByRange(Map<Character, Boolean> range, Contact contact) {
+		// get the first character in firstname string
+		Character firtCharOfString = Character.toUpperCase(contact.getFirstname().charAt(0));
+		if(range.get(firtCharOfString) == false) {
+			sendFeedback("");
+			sendFeedback("---------" + String.valueOf(firtCharOfString));
+			sendFeedback("");
+			range.replace(firtCharOfString, true);					
+		}
+	}
+	
 	/**
 	 * display a single contact object to console
 	 * @param response
 	 */
 	private void displayData(Contact response) {
+		displayBlankLine();
+		sendFeedback("================ Telephone Directory Result ================");
 		displayBlankLine();
 		displayContactDetails(1, response);
 	}
@@ -250,8 +324,14 @@ public class TelephoneDirectory {
 	/**
 	 * prompt user to enter details for a new contact<br>
 	 * <small>prompt for <i>firstname, lastname, phone</i></small>
+	 * @return a new contact object
 	 */
-	private void requestNewContactDetails() {
+	private Contact requestNewContactDetails() {
+		String firstname = null;
+		String lastname = null;
+		String phone = null;
+		
+		displayBlankLine();
 		sendFeedback("Enter a New Contact Details>");
 		
 		while (firstname == null || firstname.isBlank()) {
@@ -269,6 +349,13 @@ public class TelephoneDirectory {
 			sendFeedback("Phone No. must be (11) digits> ");
 			phone = scanner.nextLine();					
 		}
+		
+		if(firstname != null && !firstname.isBlank() && lastname != null && !lastname.isBlank() && phone != null && phone.length() == 11) {
+			Contact contact = new Contact(firstname, lastname, phone);
+			return contact;
+		}
+		
+		return null;
 	}
 	/**
 	 * prompt user for action to either find all matches to query,
