@@ -9,6 +9,11 @@ public class Helpers {
 
 	public Helpers() {}
 	
+	/**
+	 * convert arraylist of contact to json
+	 * @param data - contact list
+	 * @return json - string
+	 */
 	public String convertListToJSON(ArrayList<Contact> data) {
 		Gson prettyGson = new GsonBuilder()
 								.serializeNulls()
@@ -17,7 +22,11 @@ public class Helpers {
 		String prettyJson = prettyGson.toJson(data);
 		return prettyJson;
 	}
-	
+	/**
+	 * convert contact object to json
+	 * @param data - contact object
+	 * @return json - string
+	 */
 	public String convertObjectToJSON(Contact data) {
 		// Use this builder to construct a Gson instance when you need to set configuration options other than the default.
 		GsonBuilder gsonBuilder = new GsonBuilder();

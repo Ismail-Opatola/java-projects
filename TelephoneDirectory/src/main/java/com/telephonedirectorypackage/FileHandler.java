@@ -13,9 +13,14 @@ import com.google.gson.reflect.TypeToken;
 public class FileHandler {
 
 public FileHandler() {}
+
 	
+	/**
+	 * Write JSON file
+	 * @param filePath
+	 * @param jsonData
+	 */
 	public void writeToJsonFile(String filePath, String jsonData) {		
-		//Write JSON file
 		try {
 			FileWriter file = new FileWriter(filePath);
 			
@@ -28,6 +33,12 @@ public FileHandler() {}
 		}
 	}
 	
+	/**
+	 * read JSON file
+	 * @param filePath
+	 * @return ContactList
+	 * @throws ParseException
+	 */
 	public ArrayList<Contact> readFromJsonFile(String filePath) throws ParseException {
 		try {
 			FileReader reader = new FileReader(filePath);
