@@ -78,6 +78,7 @@ public class TelephoneDirectory {
 		 * stream help.txt to console
 		 */
 		try {
+			// track code excution time
 			final long startTime = System.currentTimeMillis();
 
 			FileReader reader = new FileReader("lib/help.txt");
@@ -85,6 +86,7 @@ public class TelephoneDirectory {
 			
 			displayBlankLine();
 			
+			// while data is not empty, print stream to console
 			while(data != -1) {
 				System.out.print((char)data);
 				data = reader.read();
@@ -93,6 +95,7 @@ public class TelephoneDirectory {
 			
 			displayBlankLine();
 			
+			// track code excution time
 			final long endTime = System.currentTimeMillis();
 			sendExecutionTimeFeedback(startTime, endTime);
 		} catch (FileNotFoundException e) {

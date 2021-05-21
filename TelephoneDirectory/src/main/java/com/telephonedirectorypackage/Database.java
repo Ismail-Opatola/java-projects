@@ -5,7 +5,6 @@ import java.util.ArrayList;
 //import java.util.Arrays;
 
 public class Database implements IDatabase {
-	
 	private ArrayList<Contact> contactList;
 	private String pathToDatabase;
 	FileHandler fileHandler;
@@ -80,8 +79,7 @@ public class Database implements IDatabase {
 		
 		ArrayList<Contact> result = new ArrayList<Contact>(); 
 		
-		for(int i = 0; i < contactList.size(); i++) {
-			Contact contact = contactList.get(i);
+		for(Contact contact : contactList) {
 			if(
 				contact.getFirstname().compareToIgnoreCase(queryString) == 0
 				|| contact.getLastname().compareToIgnoreCase(queryString) == 0
@@ -101,8 +99,7 @@ public class Database implements IDatabase {
 	public Contact find(String queryString) {
 		Contact result = null; 
 		
-		for(int i = 0; i < contactList.size(); i++) {
-			Contact contact = contactList.get(i);
+		for(Contact contact : contactList) {
 			if(
 				contact.getFirstname().compareToIgnoreCase(queryString) == 0
 				|| contact.getLastname().compareToIgnoreCase(queryString) == 0
