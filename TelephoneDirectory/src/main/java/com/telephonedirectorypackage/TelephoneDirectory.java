@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.Scanner;
-
 public class TelephoneDirectory {
 
 	private Scanner scanner;
@@ -172,6 +171,7 @@ public class TelephoneDirectory {
 				Contact response = db.find(queryString);
 				if(response != null) {
 					displayData(response);				
+					// TODO: More actions: Update, Delete, Back
 				} else {
 					sendFeedback("Contact Not Found!");
 				}				
@@ -219,6 +219,7 @@ public class TelephoneDirectory {
 		// parse and print contact list
 		helpers.forEachWithCounter(contactList, new BiConsumer<Integer, Contact>() {
 			public void accept(Integer i, Contact contact) {
+				// TODO: grep data to console
 				displayContactDetails(i, contact);
 			}
 		});
