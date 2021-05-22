@@ -73,17 +73,16 @@ public class Database implements IDatabase {
 	 * @return array list of contacts or empty array list 
 	 */
 	public ArrayList<Contact> findAll(String queryString) {
-		// using binary search algorithm
+		// TODO: use binary search algorithm
 		// ArrayList<Contact> result = Arrays.binarySearch(contactList, queryString);
-		// TODO: regex match - contact property contain the queryString i.e "oe" -> deola, joe
 		
 		ArrayList<Contact> result = new ArrayList<Contact>(); 
 		
 		for(Contact contact : contactList) {
 			if(
-				contact.getFirstname().compareToIgnoreCase(queryString) == 0
-				|| contact.getLastname().compareToIgnoreCase(queryString) == 0
-				|| contact.getPhone().compareToIgnoreCase(queryString) == 0
+				contact.getFirstname().toLowerCase().contains(queryString.toLowerCase())
+				|| contact.getLastname().toLowerCase().contains(queryString.toLowerCase())
+				|| contact.getPhone().toLowerCase().contains(queryString.toLowerCase())
 			) {
 				result.add(contact);
 			}
