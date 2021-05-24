@@ -1,5 +1,10 @@
 package com.telephonedirectorypackage;
 
+/**
+ * Main Class - initialize the TelephoneDirectory app
+ * @author Ismail
+ *
+ */
 public class Main {
 
 	public static void main(String[] args) {

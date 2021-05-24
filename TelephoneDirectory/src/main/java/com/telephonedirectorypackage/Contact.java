@@ -2,6 +2,11 @@ package com.telephonedirectorypackage;
 
 import java.util.UUID;
 
+/**
+ * Contact class
+ * @author Ismail
+ *
+ */
 public class Contact {
 
 	private UUID uid;
@@ -93,4 +98,8 @@ public class Contact {
 		return super.toString();
 	}
 	
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		return super.clone();
+	}
 }

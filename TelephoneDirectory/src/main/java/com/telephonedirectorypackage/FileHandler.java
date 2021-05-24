@@ -10,10 +10,15 @@ import java.util.ArrayList;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
+/**
+ * FileHadler Utility to write and read Json file 	
+ */
 public class FileHandler {
 
-public FileHandler() {}
-
+	/**
+	 * File Constructor
+	 */
+	public FileHandler() {}
 	
 	/**
 	 * Write JSON file

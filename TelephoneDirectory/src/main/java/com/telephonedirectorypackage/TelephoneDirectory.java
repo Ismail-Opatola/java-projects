@@ -4,16 +4,23 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.UUID;
+
+/**
+ * Telephone Directory Class - 
+ * main composition of the app
+ * @author Ismail
+ *
+ */
 public class TelephoneDirectory {
 
 	private Scanner scanner;
 	Database db;
 	Helpers helpers;
-		
+	
 	/**
 	 * Telephone Directory constructor
 	 */
@@ -39,28 +46,35 @@ public class TelephoneDirectory {
 			System.out.println("\nWhat do you want to do? Enter a Key...");
 			System.out.print("(H)elp \n(N)ew Contact \n(L)ist \n(F)ind \n(Q)uit \n> ");
 			
-			char response = Character.toUpperCase(scanner.nextLine().charAt(0));
-			
-			switch (response) {
-			case 'H':
-				help();
-				break;
-			case 'N':
-				newContact();
-				break;
-			case 'L':
-				list();
-				break;
-			case 'F':
-				find();
-				break;
-			case 'Q':
-				quit();
-				break;
+			char response = 0;
+			try {
+				response = Character.toUpperCase(scanner.nextLine().charAt(0));				
 
-			default:
-				sendFeedback("Not a valid answer");
-				break;
+				switch (response) {
+				case 'H':
+					help();
+					break;
+				case 'N':
+					newContact();
+					break;
+				case 'L':
+					list();
+					break;
+				case 'F':
+					find();
+					break;
+				case 'Q':
+					quit();
+					break;
+				default:
+					// throws when: 
+					// - user press enter key without typing a char
+					// - user enters char other than the above cases
+					throw new StringIndexOutOfBoundsException(); 
+				}
+			} catch (StringIndexOutOfBoundsException e) {
+				displayBlankLine();
+				sendFeedback("Not a valid response");				
 			}
 			
 		}
@@ -70,7 +84,7 @@ public class TelephoneDirectory {
 	/**
 	 * Displays help about Telephone Directory cmdlets
 	 */
-	private void help() {
+	public void help() {
 		/**
 		 * stream help.txt to console
 		 */
@@ -106,7 +120,7 @@ public class TelephoneDirectory {
 	 * creates a new contact
 	 * and save to the database
 	 */
-	private void newContact() {
+	public void newContact() {
 				
 		try {
 			// track code excution time
@@ -132,7 +146,7 @@ public class TelephoneDirectory {
 	/**
 	 * list all contacts in the Telephone Directory
 	 */
-	private void list() {
+	public void list() {
 		try {
 			// track code excution time
 			final long startTime = System.currentTimeMillis();
@@ -158,7 +172,7 @@ public class TelephoneDirectory {
 	 * 	<li>find all possible match</li>
 	 * </ul>
 	 */
-	private void find() {
+	public void find() {
 		// track code excution time
 		final long startTime = System.currentTimeMillis();
 
@@ -171,7 +185,8 @@ public class TelephoneDirectory {
 				Contact response = db.find(queryString);
 				if(response != null) {
 					displayData(response);				
-					// TODO: More actions: Update, Delete, Back
+					// More actions: Update, Delete, Quit
+					requestMoreAction(response);
 				} else {
 					displayBlankLine();
 					sendFeedback("Contact not found!");
@@ -198,7 +213,7 @@ public class TelephoneDirectory {
 	/**
 	 * kill or stop running application
 	 */
-	private void quit() {
+	public void quit() {
 		killAppStaticFeedback();		
 		System.exit(0);
 	}
@@ -209,20 +224,14 @@ public class TelephoneDirectory {
 	private void sortAndDisplayData(ArrayList<Contact> contactList) {
 		// range 0 - Z
 		final Map<Character, Boolean> range = generateMapOfRange0ToZ();
-		
-		// sort contact list by firstname
-		Comparator<Contact> c = new Comparator<Contact>() {
-			public int compare(Contact s1, Contact s2) {
-				return helpers.compare(s1, s2);
-			}
-		};
-
-		contactList.sort(c);
 
 		displayBlankLine();
 		sendFeedback("================ Telephone Directory Result ================");
 		displayBlankLine();
-
+		
+		// sort by firstname
+		contactList.sort(Helpers.firstnameComparator);
+		
 		// parse and print contact list
 		helpers.forEachWithCounter(contactList, new BiConsumer<Integer, Contact>() {
 			public void accept(Integer i, Contact contact) {
@@ -319,6 +328,7 @@ public class TelephoneDirectory {
 			sendFeedbackInline("Search by Phone number, Firstname or Lastname> ");
 			queryString = scanner.nextLine();			
 		}
+
 		return queryString;
 	}
 	/**
@@ -367,7 +377,13 @@ public class TelephoneDirectory {
 		while (response == 0 || (response != 'Q' && response != '1' && response != '2')) {
 			displayBlankLine();
 			sendFeedbackInline("Do you want to find all matches? \n(1) Yes find all \n(2) No, find exact match \n(Q) Exit application \n> ");
-			response = Character.toUpperCase(scanner.nextLine().charAt(0));
+			try {	
+				response = Character.toUpperCase(scanner.nextLine().charAt(0));
+			} catch (StringIndexOutOfBoundsException e) {
+				System.out.println("askToFindAllMatch context 2");
+				displayBlankLine();
+				sendFeedback("Not a valid response");				
+			}
 		}
 		// if Yes
 		if (response == '1' ) {
@@ -382,17 +398,149 @@ public class TelephoneDirectory {
 	}
 	
 	/**
+	 * request more actions on a contact
+	 * (U)pdate, (D)elete, (B)ack to main menu, (Q)uit app 
+	 * @return
+	 */
+	private void requestMoreAction(Contact contact) {
+		Character response = (Character) null;
+		boolean back = false;
+		
+		while (!back) {
+			displayBlankLine();
+			sendFeedbackInline("More actions: \n(U)pdate, (D)elete, (B)ack, (Q)uit > ");
+			try {	
+				response = Character.toUpperCase(scanner.nextLine().charAt(0));
+				
+				switch (response) {
+				case 'U':
+					// exit loop if contact was successfully updated
+					back = updateContact(contact);
+					break;
+				case 'D':
+					// exit loop if contact was successfully deleted
+					back = deleteContact(contact);
+					break;
+				case 'B':
+					back = true;
+					break;
+				case 'Q':
+					quit();
+					break;
+				default:
+					throw new StringIndexOutOfBoundsException();
+				}
+			
+			} catch (StringIndexOutOfBoundsException e) {
+				displayBlankLine();
+				sendFeedback("Not a valid response");				
+			}
+		}		
+	}
+	
+	/**
+	 * Delete contact from Telephone Directory
+	 * @param uid
+	 * @return boolean
+	 */
+	public boolean deleteContact(Contact contact) {
+		Character response = null;
+		// prompt warning
+		while (response == null || response != 'Y' && response != 'N') {
+			displayBlankLine();
+			sendFeedbackInline("Are you sure you want to delete this data? (Y)es or (N)o...> ");
+			try {
+				response = Character.toUpperCase(scanner.nextLine().charAt(0));
+			} catch (StringIndexOutOfBoundsException e) {
+				displayBlankLine();
+				sendFeedback("Not a valid response");				
+			}
+		}
+		
+		Boolean done;
+		// if Yes, perform delete operation
+		if(response == 'Y') {
+			done = db.delete(contact);
+			if(done) {
+				displayBlankLine();
+				sendFeedback("successfully deleted");
+				return true;
+			} else {
+				displayBlankLine();
+				sendFeedback("unable to delete contact");
+				return false;
+			}
+		}
+		// if No, don't delete
+		return false;
+	}
+
+	public boolean updateContact(Contact oldContact) {
+		
+		String firstname = null;
+		String lastname = null;
+		String phone = null;
+		
+		displayBlankLine();
+		sendFeedback("Modify contact details (press ENTER to Skip a feild)>");
+		
+		displayBlankLine();
+		sendFeedbackInline("Change firstname From: " + oldContact.getFirstname() + " To: " + "> ");		
+		firstname = scanner.nextLine();			
+		
+		sendFeedbackInline("\nChange lastname From: " + oldContact.getLastname() + " To: " + "> ");		
+		lastname = scanner.nextLine();			
+
+		sendFeedbackInline("\nChange phone From: " + oldContact.getPhone() + " To: " + "> ");		
+		phone = scanner.nextLine();			
+		
+		if(firstname != null && !firstname.isBlank()) oldContact.setFirstname(firstname);
+		if(lastname != null && !lastname.isBlank()) oldContact.setLastname(lastname);
+		if(phone != null && !phone.isBlank()) oldContact.setPhone(phone);
+		
+		Character response = null;
+		// prompt warning
+		while (response == null || response != 'Y' && response != 'N') {
+			displayBlankLine();
+			sendFeedbackInline("Proceed to modiy data? (Y)es or (N)o...> ");
+			try {
+				response = Character.toUpperCase(scanner.nextLine().charAt(0));
+			} catch (StringIndexOutOfBoundsException e) {
+				displayBlankLine();
+				sendFeedback("Not a valid response");				
+			}
+		}
+		
+		Boolean done;
+		// if Yes, proceed to update contact
+		if(response == 'Y') {
+			done = db.update(oldContact);
+			if(done) {
+				displayBlankLine();
+				sendFeedback("successfully updated");
+				return true;
+			} else {
+				displayBlankLine();
+				sendFeedback("unable to update contact");
+				return false;
+			}
+		}
+		// if No, don't update
+		return false;
+	}
+
+	/**
 	 * A wrapper arround System.out.println. 
 	 * Prints string data to the console
 	 * @param data
 	 */
-	void sendFeedback(String data) {
+	private void sendFeedback(String data) {
 		System.out.println(data);			
 	}
 	/**
 	 * print data inline
 	 */
-	void sendFeedbackInline(String data) {
+	private void sendFeedbackInline(String data) {
 		System.out.print(data);			
 	}
 	/**
@@ -405,7 +553,7 @@ public class TelephoneDirectory {
 	 * <p><i>visual que</i></p>
 	 * imitate application startup progress feedback
 	 */
-	void launchAppStaticFeedback() {
+	private void launchAppStaticFeedback() {
 		final long startTime = System.currentTimeMillis();
 		System.out.print("Execute - Start Telephone Directory App ");
 		System.out.print("[");
@@ -425,7 +573,7 @@ public class TelephoneDirectory {
 	 * <p><i>visual que</i></p>
 	 * imitate application exit progress feedback 
 	 */	
-	void killAppStaticFeedback() {
+	private void killAppStaticFeedback() {
 		final long startTime = System.currentTimeMillis();
 		System.out.println();
 		System.out.print("Execute - Kill Application ");
@@ -447,7 +595,7 @@ public class TelephoneDirectory {
 	 * @param startTime
 	 * @param endTime
 	 */
-	void sendExecutionTimeFeedback(long startTime, long endTime) {
+	private void sendExecutionTimeFeedback(long startTime, long endTime) {
 		sendFeedback("\nDone in " + (endTime - startTime) + "s.");
 	}
 	
@@ -456,11 +604,13 @@ public class TelephoneDirectory {
 	 * @param i
 	 * @param contact
 	 */
-    public void displayContactDetails(int i, Contact contact) {
+    private void displayContactDetails(int i, Contact contact) {
     	String firstname = (String) contact.getFirstname();    
     	String lastname = (String) contact.getLastname();    
     	String phone = (String) contact.getPhone();    
     	
+    	// TODO: USE ConsoleColors
+    	// System.out.print(ConsoleColors.BLUE_BACKGROUND);
     	System.out.println(
 				"(" + (i+1) + ")" 
 				+ " " 
@@ -471,5 +621,6 @@ public class TelephoneDirectory {
 				+ lastname 
 				+ " " + "Phone: " 
 				+ phone);
+    	// System.out.print(ConsoleColors.RESET);
     }
 }
