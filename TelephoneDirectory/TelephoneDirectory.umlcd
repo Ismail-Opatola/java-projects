@@ -168,30 +168,6 @@
       <cardinality xmi:id="_rUlCkLwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUIWobwFEeuWC6pGpwJA8g" targetItem="_rUuzkLwFEeuWC6pGpwJA8g" sourceItem="_rUIWoLwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUMBAbwFEeuWC6pGpwJA8g" targetItem="_rUuzorwFEeuWC6pGpwJA8g" sourceItem="_rUMBALwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUMoELwFEeuWC6pGpwJA8g" targetItem="_rUuzqLwFEeuWC6pGpwJA8g" sourceItem="_rUMBArwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUPrYbwFEeuWC6pGpwJA8g" targetItem="_rUuzq7wFEeuWC6pGpwJA8g" sourceItem="_rUPrYLwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUQScbwFEeuWC6pGpwJA8g" targetItem="_rUuzrrwFEeuWC6pGpwJA8g" sourceItem="_rUQScLwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUQ5gbwFEeuWC6pGpwJA8g" targetItem="_rUuzsbwFEeuWC6pGpwJA8g" sourceItem="_rUQ5gLwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rURgkbwFEeuWC6pGpwJA8g" targetItem="_rUuztLwFEeuWC6pGpwJA8g" sourceItem="_rURgkLwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUSusbwFEeuWC6pGpwJA8g" targetItem="_rUvaobwFEeuWC6pGpwJA8g" sourceItem="_rUSusLwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUTVwbwFEeuWC6pGpwJA8g" targetItem="_rUvapLwFEeuWC6pGpwJA8g" sourceItem="_rUTVwLwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUUj4LwFEeuWC6pGpwJA8g" targetItem="_rUvaqrwFEeuWC6pGpwJA8g" sourceItem="_rUT80LwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUVK8bwFEeuWC6pGpwJA8g" targetItem="_rUvar7wFEeuWC6pGpwJA8g" sourceItem="_rUVK8LwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUVyAbwFEeuWC6pGpwJA8g" targetItem="_rUvatLwFEeuWC6pGpwJA8g" sourceItem="_rUVyALwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUWZEbwFEeuWC6pGpwJA8g" targetItem="_rUvaubwFEeuWC6pGpwJA8g" sourceItem="_rUWZELwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUXAIbwFEeuWC6pGpwJA8g" targetItem="_rUvav7wFEeuWC6pGpwJA8g" sourceItem="_rUXAILwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUYOQLwFEeuWC6pGpwJA8g" targetItem="_rUvaxbwFEeuWC6pGpwJA8g" sourceItem="_rUXnMLwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUY1UbwFEeuWC6pGpwJA8g" targetItem="_rUvayLwFEeuWC6pGpwJA8g" sourceItem="_rUY1ULwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUZcYbwFEeuWC6pGpwJA8g" targetItem="_rUvay7wFEeuWC6pGpwJA8g" sourceItem="_rUZcYLwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUaDcbwFEeuWC6pGpwJA8g" targetItem="_rUvazrwFEeuWC6pGpwJA8g" sourceItem="_rUaDcLwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUaqgbwFEeuWC6pGpwJA8g" targetItem="_rUva17wFEeuWC6pGpwJA8g" sourceItem="_rUaqgLwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUbRkLwFEeuWC6pGpwJA8g" targetItem="_rUva3bwFEeuWC6pGpwJA8g" sourceItem="_rUaqgrwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUcfsLwFEeuWC6pGpwJA8g" targetItem="_rUva47wFEeuWC6pGpwJA8g" sourceItem="_rUb4oLwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUgxILwFEeuWC6pGpwJA8g" targetItem="_rUva87wFEeuWC6pGpwJA8g" sourceItem="_rUgKELwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUhYMbwFEeuWC6pGpwJA8g" targetItem="_rUva_LwFEeuWC6pGpwJA8g" sourceItem="_rUhYMLwFEeuWC6pGpwJA8g"/>
-  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_rUimUbwFEeuWC6pGpwJA8g" targetItem="_rUvbArwFEeuWC6pGpwJA8g" sourceItem="_rUimULwFEeuWC6pGpwJA8g"/>
   <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_rUtlcLwFEeuWC6pGpwJA8g" source="_rUuzkLwFEeuWC6pGpwJA8g">
     <modelElement href="TelephoneDirectory.uml#_qvpwkbwFEeuWC6pGpwJA8g"/>
     <stereotypes xmi:id="_rUtlcbwFEeuWC6pGpwJA8g" name="Reference">
@@ -234,6 +210,30 @@
       <cardinality xmi:id="_rYcO4rwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
     </targetRole>
   </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KPd04LyfEeuWC6pGpwJA8g" targetItem="_rUuzkLwFEeuWC6pGpwJA8g" sourceItem="_KPZjcLyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KP89ELyfEeuWC6pGpwJA8g" targetItem="_rUuzorwFEeuWC6pGpwJA8g" sourceItem="_KPjUcLyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KP_ZULyfEeuWC6pGpwJA8g" targetItem="_rUuzqLwFEeuWC6pGpwJA8g" sourceItem="_KP-yQLyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQAncbyfEeuWC6pGpwJA8g" targetItem="_rUuzq7wFEeuWC6pGpwJA8g" sourceItem="_KQAncLyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQCcoLyfEeuWC6pGpwJA8g" targetItem="_rUuzrrwFEeuWC6pGpwJA8g" sourceItem="_KQB1kLyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQDqwbyfEeuWC6pGpwJA8g" targetItem="_rUuzsbwFEeuWC6pGpwJA8g" sourceItem="_KQDqwLyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQFf8LyfEeuWC6pGpwJA8g" targetItem="_rUuztLwFEeuWC6pGpwJA8g" sourceItem="_KQE44LyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQIjQLyfEeuWC6pGpwJA8g" targetItem="_rUvaobwFEeuWC6pGpwJA8g" sourceItem="_KQH8MLyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQKYcbyfEeuWC6pGpwJA8g" targetItem="_rUvapLwFEeuWC6pGpwJA8g" sourceItem="_KQKYcLyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQMNoLyfEeuWC6pGpwJA8g" targetItem="_rUvaqrwFEeuWC6pGpwJA8g" sourceItem="_KQLmkLyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQOC0LyfEeuWC6pGpwJA8g" targetItem="_rUvar7wFEeuWC6pGpwJA8g" sourceItem="_KQNbwLyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQPQ8byfEeuWC6pGpwJA8g" targetItem="_rUvatLwFEeuWC6pGpwJA8g" sourceItem="_KQPQ8LyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQiy8LyfEeuWC6pGpwJA8g" targetItem="_rUvaubwFEeuWC6pGpwJA8g" sourceItem="_KQQfELyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQlPMLyfEeuWC6pGpwJA8g" targetItem="_rUvav7wFEeuWC6pGpwJA8g" sourceItem="_KQkoILyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQnEYLyfEeuWC6pGpwJA8g" targetItem="_rUvaxbwFEeuWC6pGpwJA8g" sourceItem="_KQmdULyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQrV0LyfEeuWC6pGpwJA8g" targetItem="_rUvayLwFEeuWC6pGpwJA8g" sourceItem="_KQquwLyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQtLAbyfEeuWC6pGpwJA8g" targetItem="_rUvay7wFEeuWC6pGpwJA8g" sourceItem="_KQtLALyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KQ28ALyfEeuWC6pGpwJA8g" targetItem="_rUvazrwFEeuWC6pGpwJA8g" sourceItem="_KQxccLyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KRBUEbyfEeuWC6pGpwJA8g" targetItem="_rUva17wFEeuWC6pGpwJA8g" sourceItem="_KRBUELyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KREXYLyfEeuWC6pGpwJA8g" targetItem="_rUva3bwFEeuWC6pGpwJA8g" sourceItem="_KRDwULyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KRGzoLyfEeuWC6pGpwJA8g" targetItem="_rUva47wFEeuWC6pGpwJA8g" sourceItem="_KRGMkLyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KRJ28byfEeuWC6pGpwJA8g" targetItem="_rUva87wFEeuWC6pGpwJA8g" sourceItem="_KRJ28LyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KROvcLyfEeuWC6pGpwJA8g" targetItem="_rUva_LwFEeuWC6pGpwJA8g" sourceItem="_KRLsILyfEeuWC6pGpwJA8g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_KRRLsLyfEeuWC6pGpwJA8g" targetItem="_rUvbArwFEeuWC6pGpwJA8g" sourceItem="_KRQkoLyfEeuWC6pGpwJA8g"/>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rODj0LwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rOFZALwFEeuWC6pGpwJA8g" text="Helpers - contains utilities to convert, parse&#xD;&#xA;compare and loop data&#xD;&#xA;@author Ismail&#xD;&#xA; *" item="_rOisCbwFEeuWC6pGpwJA8g">
     <modelElement href="TelephoneDirectory.uml#_qvSkMLwFEeuWC6pGpwJA8g"/>
   </nodes>
@@ -270,78 +270,6 @@
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rTIRELwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rTI4ILwFEeuWC6pGpwJA8g" text="Contact class&#xD;&#xA;@author Ismail&#xD;&#xA; *" item="_rTRbALwFEeuWC6pGpwJA8g">
     <modelElement href="TelephoneDirectory.uml#_qvQvALwFEeuWC6pGpwJA8g"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUIWoLwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUIWobwFEeuWC6pGpwJA8g" text="Telephone Directory Class - &#xD;&#xA;main composition of the app&#xD;&#xA;@author Ismail&#xD;&#xA; *" item="_rUuzkLwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvTLQLwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUMBALwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUMBAbwFEeuWC6pGpwJA8g" text="Telephone Directory constructor" item="_rUuzorwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvTLQbwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUMBArwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUMoELwFEeuWC6pGpwJA8g" text="request user actions and listen for response" item="_rUuzqLwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvTLQrwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUPrYLwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUPrYbwFEeuWC6pGpwJA8g" text="Displays help about Telephone Directory cmdlets" item="_rUuzq7wFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvTLQ7wFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUQScLwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUQScbwFEeuWC6pGpwJA8g" text="creates a new contact&#xD;&#xA;&#x9; * and save to the database" item="_rUuzrrwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvTyULwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUQ5gLwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUQ5gbwFEeuWC6pGpwJA8g" text="list all contacts in the Telephone Directory" item="_rUuzsbwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvTyUbwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rURgkLwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rURgkbwFEeuWC6pGpwJA8g" text="find contact by query&lt;br>&#xD;&#xA;&#x9; * prompts user for:&#xD;&#xA;&#x9; * &lt;ul>&#xD;&#xA;&#x9; * &#x9;&lt;li>query string&lt;/li>&#xD;&#xA;&#x9; * &#x9;&lt;li>find exact match&lt;/li>&#xD;&#xA;&#x9; * &#x9;&lt;li>find all possible match&lt;/li>&#xD;&#xA;&#x9; * &lt;/ul>" item="_rUuztLwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvTyUrwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUSusLwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUSusbwFEeuWC6pGpwJA8g" text="kill or stop running application" item="_rUvaobwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvTyU7wFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUTVwLwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUTVwbwFEeuWC6pGpwJA8g" text="generate an object map &#xD;&#xA;&#x9; * &lt;ul>&#xD;&#xA;&#x9; * &#x9;&lt;li>whose keys ranges from 0 to Z char&lt;/li> &#xD;&#xA;&#x9; * &#x9;&lt;li>holds boolean value - true or false&lt;/li>&#xD;&#xA;&#x9; * &lt;/ul>&#xD;&#xA;&#x9; * @return Map" item="_rUvapLwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvUZYLwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUT80LwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUUj4LwFEeuWC6pGpwJA8g" text="prompt user to enter search query&lt;br>" item="_rUvaqrwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvUZY7wFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUVK8LwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUVK8bwFEeuWC6pGpwJA8g" text="prompt user to enter details for a new contact&lt;br>&#xD;&#xA;&#x9; * &lt;small>prompt for &lt;i>firstname, lastname, phone&lt;/i>&lt;/small>&#xD;&#xA;&#x9; * @return a new contact object" item="_rUvar7wFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvVAcLwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUVyALwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUVyAbwFEeuWC6pGpwJA8g" text="prompt user for action to either find all matches to query,&#xD;&#xA;&#x9; * find the exact match or quit app&#xD;&#xA;&#x9; * @return boolean" item="_rUvatLwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvVAcbwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUWZELwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUWZEbwFEeuWC6pGpwJA8g" text="A wrapper arround System.out.println. &#xD;&#xA;&#x9; * Prints string data to the console&#xD;&#xA;&#x9; * @param data" item="_rUvaubwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvVAdLwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUXAILwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUXAIbwFEeuWC6pGpwJA8g" text="print data inline" item="_rUvav7wFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvVngLwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUXnMLwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUYOQLwFEeuWC6pGpwJA8g" text="print an empty line to std-output" item="_rUvaxbwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvVngbwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUY1ULwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUY1UbwFEeuWC6pGpwJA8g" text="&lt;p>&lt;i>visual que&lt;/i>&lt;/p>&#xD;&#xA;&#x9; * imitate application startup progress feedback" item="_rUvayLwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvVngrwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUZcYLwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUZcYbwFEeuWC6pGpwJA8g" text="&lt;p>&lt;i>visual que&lt;/i>&lt;/p>&#xD;&#xA;&#x9; * imitate application exit progress feedback" item="_rUvay7wFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvVng7wFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUaDcLwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUaDcbwFEeuWC6pGpwJA8g" text="display total execution time after a task &#xD;&#xA;&#x9; * @param startTime&#xD;&#xA;&#x9; * @param endTime" item="_rUvazrwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvVnhLwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUaqgLwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUaqgbwFEeuWC6pGpwJA8g" text="display a single contact object to console&#xD;&#xA;&#x9; * @param response" item="_rUva17wFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvUZYrwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUaqgrwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUbRkLwFEeuWC6pGpwJA8g" text="request more actions on a contact&#xD;&#xA;&#x9; * (U)pdate, (D)elete, (B)ack to main menu, (Q)uit app &#xD;&#xA;&#x9; * @return" item="_rUva3bwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvVAcrwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUb4oLwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUcfsLwFEeuWC6pGpwJA8g" text="Delete contact from Telephone Directory&#xD;&#xA;&#x9; * @param uid&#xD;&#xA;&#x9; * @return boolean" item="_rUva47wFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvVAc7wFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUgKELwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUgxILwFEeuWC6pGpwJA8g" text="parse and print contact object to console&#xD;&#xA;&#x9; * @param i&#xD;&#xA;&#x9; * @param contact" item="_rUva87wFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvVnhbwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUhYMLwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUhYMbwFEeuWC6pGpwJA8g" text="sort and display a list of contacts to the console&#xD;&#xA;&#x9; * @param contactList" item="_rUva_LwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvTyVLwFEeuWC6pGpwJA8g"/>
-  </nodes>
-  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rUimULwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rUimUbwFEeuWC6pGpwJA8g" text="track and display range 0 - Z to console&#xD;&#xA;&#x9; * @param range&#xD;&#xA;&#x9; * @param contact" item="_rUvbArwFEeuWC6pGpwJA8g">
-    <modelElement href="TelephoneDirectory.uml#_qvUZYbwFEeuWC6pGpwJA8g"/>
-  </nodes>
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rVhdwLwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rViE0LwFEeuWC6pGpwJA8g" text="Main Class - initialize the TelephoneDirectory app&#xD;&#xA;@author Ismail&#xD;&#xA; *" item="_rVjS8LwFEeuWC6pGpwJA8g">
     <modelElement href="TelephoneDirectory.uml#_qvSkMrwFEeuWC6pGpwJA8g"/>
   </nodes>
@@ -354,7 +282,7 @@
   <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_rX0j0LwFEeuWC6pGpwJA8g" sourceConnectionVisual="_rX0j0bwFEeuWC6pGpwJA8g" text="Database Interface&#xD;&#xA;@author Ismail&#xD;&#xA; *" item="_rYeEELwFEeuWC6pGpwJA8g">
     <modelElement href="TelephoneDirectory.uml#_qvSkMbwFEeuWC6pGpwJA8g"/>
   </nodes>
-  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_rUuzkLwFEeuWC6pGpwJA8g" comments="_rUIWoLwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUIWobwFEeuWC6pGpwJA8g" name="TelephoneDirectory" associationsOut="_rUEFMLwFEeuWC6pGpwJA8g _rUF6YLwFEeuWC6pGpwJA8g _rUtlcLwFEeuWC6pGpwJA8g">
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_rUuzkLwFEeuWC6pGpwJA8g" comments="_KPZjcLyfEeuWC6pGpwJA8g" targetConnectionVisual="_KPd04LyfEeuWC6pGpwJA8g" name="TelephoneDirectory" associationsOut="_rUEFMLwFEeuWC6pGpwJA8g _rUF6YLwFEeuWC6pGpwJA8g _rUtlcLwFEeuWC6pGpwJA8g">
     <modelElement href="TelephoneDirectory.uml#_qi1ckLwFEeuWC6pGpwJA8g"/>
     <visualProperties xmi:id="_rUuzkbwFEeuWC6pGpwJA8g" position="-195.0,623.0" size="-1.0,-1.0"/>
     <visibility xmi:id="_rUuzkrwFEeuWC6pGpwJA8g" label="+"/>
@@ -391,7 +319,7 @@
         <modelElement href="TelephoneDirectory.uml#_qhpw0LwFEeuWC6pGpwJA8g"/>
       </type>
     </attributes>
-    <operations xmi:id="_rUuzorwFEeuWC6pGpwJA8g" comments="_rUMBALwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUMBAbwFEeuWC6pGpwJA8g" name="TelephoneDirectory">
+    <operations xmi:id="_rUuzorwFEeuWC6pGpwJA8g" comments="_KPjUcLyfEeuWC6pGpwJA8g" targetConnectionVisual="_KP89ELyfEeuWC6pGpwJA8g" name="TelephoneDirectory">
       <modelElement href="TelephoneDirectory.uml#_qi4f4LwFEeuWC6pGpwJA8g"/>
       <keywords xmi:id="_rUuzo7wFEeuWC6pGpwJA8g" keyword="create"/>
       <visibility xmi:id="_rUuzpLwFEeuWC6pGpwJA8g" label="~"/>
@@ -403,37 +331,37 @@
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_rUuzqLwFEeuWC6pGpwJA8g" comments="_rUMBArwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUMoELwFEeuWC6pGpwJA8g" name="askQuestion">
+    <operations xmi:id="_rUuzqLwFEeuWC6pGpwJA8g" comments="_KP-yQLyfEeuWC6pGpwJA8g" targetConnectionVisual="_KP_ZULyfEeuWC6pGpwJA8g" name="askQuestion">
       <modelElement href="TelephoneDirectory.uml#_qi68ILwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUuzqbwFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUuzqrwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_rUuzq7wFEeuWC6pGpwJA8g" comments="_rUPrYLwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUPrYbwFEeuWC6pGpwJA8g" name="help">
+    <operations xmi:id="_rUuzq7wFEeuWC6pGpwJA8g" comments="_KQAncLyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQAncbyfEeuWC6pGpwJA8g" name="help">
       <modelElement href="TelephoneDirectory.uml#_qi8KQLwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUuzrLwFEeuWC6pGpwJA8g" label="+"/>
       <cardinality xmi:id="_rUuzrbwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_rUuzrrwFEeuWC6pGpwJA8g" comments="_rUQScLwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUQScbwFEeuWC6pGpwJA8g" name="newContact">
+    <operations xmi:id="_rUuzrrwFEeuWC6pGpwJA8g" comments="_KQB1kLyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQCcoLyfEeuWC6pGpwJA8g" name="newContact">
       <modelElement href="TelephoneDirectory.uml#_qi8xULwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUuzr7wFEeuWC6pGpwJA8g" label="+"/>
       <cardinality xmi:id="_rUuzsLwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_rUuzsbwFEeuWC6pGpwJA8g" comments="_rUQ5gLwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUQ5gbwFEeuWC6pGpwJA8g" name="list">
+    <operations xmi:id="_rUuzsbwFEeuWC6pGpwJA8g" comments="_KQDqwLyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQDqwbyfEeuWC6pGpwJA8g" name="list">
       <modelElement href="TelephoneDirectory.uml#_qi9YYLwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUuzsrwFEeuWC6pGpwJA8g" label="+"/>
       <cardinality xmi:id="_rUuzs7wFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_rUuztLwFEeuWC6pGpwJA8g" comments="_rURgkLwFEeuWC6pGpwJA8g" targetConnectionVisual="_rURgkbwFEeuWC6pGpwJA8g" name="find">
+    <operations xmi:id="_rUuztLwFEeuWC6pGpwJA8g" comments="_KQE44LyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQFf8LyfEeuWC6pGpwJA8g" name="find">
       <modelElement href="TelephoneDirectory.uml#_qi9_cLwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUuztbwFEeuWC6pGpwJA8g" label="+"/>
       <cardinality xmi:id="_rUvaoLwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_rUvaobwFEeuWC6pGpwJA8g" comments="_rUSusLwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUSusbwFEeuWC6pGpwJA8g" name="quit">
+    <operations xmi:id="_rUvaobwFEeuWC6pGpwJA8g" comments="_KQH8MLyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQIjQLyfEeuWC6pGpwJA8g" name="quit">
       <modelElement href="TelephoneDirectory.uml#_qi_NkLwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUvaorwFEeuWC6pGpwJA8g" label="+"/>
       <cardinality xmi:id="_rUvao7wFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_rUvapLwFEeuWC6pGpwJA8g" comments="_rUTVwLwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUTVwbwFEeuWC6pGpwJA8g" name="generateMapOfRange0ToZ">
+    <operations xmi:id="_rUvapLwFEeuWC6pGpwJA8g" comments="_KQKYcLyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQKYcbyfEeuWC6pGpwJA8g" name="generateMapOfRange0ToZ">
       <modelElement href="TelephoneDirectory.uml#_qjAbsLwFEeuWC6pGpwJA8g"/>
       <stereotypes xmi:id="_rUvapbwFEeuWC6pGpwJA8g" name="Generics">
         <modelElement href="TelephoneDirectory.uml#_qjCQ4LwFEeuWC6pGpwJA8g"/>
@@ -447,7 +375,7 @@
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_rUvaqrwFEeuWC6pGpwJA8g" comments="_rUT80LwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUUj4LwFEeuWC6pGpwJA8g" name="requestQuery">
+    <operations xmi:id="_rUvaqrwFEeuWC6pGpwJA8g" comments="_KQLmkLyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQMNoLyfEeuWC6pGpwJA8g" name="requestQuery">
       <modelElement href="TelephoneDirectory.uml#_qjEGELwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUvaq7wFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUvarLwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
@@ -458,7 +386,7 @@
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_rUvar7wFEeuWC6pGpwJA8g" comments="_rUVK8LwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUVK8bwFEeuWC6pGpwJA8g" name="requestNewContactDetails">
+    <operations xmi:id="_rUvar7wFEeuWC6pGpwJA8g" comments="_KQNbwLyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQOC0LyfEeuWC6pGpwJA8g" name="requestNewContactDetails">
       <modelElement href="TelephoneDirectory.uml#_qjGiULwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUvasLwFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUvasbwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
@@ -469,7 +397,7 @@
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_rUvatLwFEeuWC6pGpwJA8g" comments="_rUVyALwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUVyAbwFEeuWC6pGpwJA8g" name="askToFindAllMatch">
+    <operations xmi:id="_rUvatLwFEeuWC6pGpwJA8g" comments="_KQPQ8LyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQPQ8byfEeuWC6pGpwJA8g" name="askToFindAllMatch">
       <modelElement href="TelephoneDirectory.uml#_qjHwcLwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUvatbwFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUvatrwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
@@ -480,7 +408,7 @@
         </type>
       </outParameters>
     </operations>
-    <operations xmi:id="_rUvaubwFEeuWC6pGpwJA8g" comments="_rUWZELwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUWZEbwFEeuWC6pGpwJA8g" name="sendFeedback">
+    <operations xmi:id="_rUvaubwFEeuWC6pGpwJA8g" comments="_KQQfELyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQiy8LyfEeuWC6pGpwJA8g" name="sendFeedback">
       <modelElement href="TelephoneDirectory.uml#_qjWZ8LwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUvaurwFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUvau7wFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
@@ -492,7 +420,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_rUvav7wFEeuWC6pGpwJA8g" comments="_rUXAILwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUXAIbwFEeuWC6pGpwJA8g" name="sendFeedbackInline">
+    <operations xmi:id="_rUvav7wFEeuWC6pGpwJA8g" comments="_KQkoILyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQlPMLyfEeuWC6pGpwJA8g" name="sendFeedbackInline">
       <modelElement href="TelephoneDirectory.uml#_qjXoELwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUvawLwFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUvawbwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
@@ -504,22 +432,22 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_rUvaxbwFEeuWC6pGpwJA8g" comments="_rUXnMLwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUYOQLwFEeuWC6pGpwJA8g" name="displayBlankLine">
+    <operations xmi:id="_rUvaxbwFEeuWC6pGpwJA8g" comments="_KQmdULyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQnEYLyfEeuWC6pGpwJA8g" name="displayBlankLine">
       <modelElement href="TelephoneDirectory.uml#_qjY2MLwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUvaxrwFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUvax7wFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_rUvayLwFEeuWC6pGpwJA8g" comments="_rUY1ULwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUY1UbwFEeuWC6pGpwJA8g" name="launchAppStaticFeedback">
+    <operations xmi:id="_rUvayLwFEeuWC6pGpwJA8g" comments="_KQquwLyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQrV0LyfEeuWC6pGpwJA8g" name="launchAppStaticFeedback">
       <modelElement href="TelephoneDirectory.uml#_qjZdQLwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUvaybwFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUvayrwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_rUvay7wFEeuWC6pGpwJA8g" comments="_rUZcYLwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUZcYbwFEeuWC6pGpwJA8g" name="killAppStaticFeedback">
+    <operations xmi:id="_rUvay7wFEeuWC6pGpwJA8g" comments="_KQtLALyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQtLAbyfEeuWC6pGpwJA8g" name="killAppStaticFeedback">
       <modelElement href="TelephoneDirectory.uml#_qjaEULwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUvazLwFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUvazbwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
     </operations>
-    <operations xmi:id="_rUvazrwFEeuWC6pGpwJA8g" comments="_rUaDcLwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUaDcbwFEeuWC6pGpwJA8g" name="sendExecutionTimeFeedback">
+    <operations xmi:id="_rUvazrwFEeuWC6pGpwJA8g" comments="_KQxccLyfEeuWC6pGpwJA8g" targetConnectionVisual="_KQ28ALyfEeuWC6pGpwJA8g" name="sendExecutionTimeFeedback">
       <modelElement href="TelephoneDirectory.uml#_qjbScLwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUvaz7wFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUva0LwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
@@ -538,7 +466,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_rUva17wFEeuWC6pGpwJA8g" comments="_rUaqgLwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUaqgbwFEeuWC6pGpwJA8g" name="displayData">
+    <operations xmi:id="_rUva17wFEeuWC6pGpwJA8g" comments="_KRBUELyfEeuWC6pGpwJA8g" targetConnectionVisual="_KRBUEbyfEeuWC6pGpwJA8g" name="displayData">
       <modelElement href="TelephoneDirectory.uml#_qqp70LwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUva2LwFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUva2bwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
@@ -550,7 +478,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_rUva3bwFEeuWC6pGpwJA8g" comments="_rUaqgrwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUbRkLwFEeuWC6pGpwJA8g" name="requestMoreAction">
+    <operations xmi:id="_rUva3bwFEeuWC6pGpwJA8g" comments="_KRDwULyfEeuWC6pGpwJA8g" targetConnectionVisual="_KREXYLyfEeuWC6pGpwJA8g" name="requestMoreAction">
       <modelElement href="TelephoneDirectory.uml#_qqrJ8LwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUva3rwFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUva37wFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
@@ -562,7 +490,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_rUva47wFEeuWC6pGpwJA8g" comments="_rUb4oLwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUcfsLwFEeuWC6pGpwJA8g" name="deleteContact">
+    <operations xmi:id="_rUva47wFEeuWC6pGpwJA8g" comments="_KRGMkLyfEeuWC6pGpwJA8g" targetConnectionVisual="_KRGzoLyfEeuWC6pGpwJA8g" name="deleteContact">
       <modelElement href="TelephoneDirectory.uml#_qqrxALwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUva5LwFEeuWC6pGpwJA8g" label="+"/>
       <cardinality xmi:id="_rUva5bwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
@@ -598,7 +526,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_rUva87wFEeuWC6pGpwJA8g" comments="_rUgKELwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUgxILwFEeuWC6pGpwJA8g" name="displayContactDetails">
+    <operations xmi:id="_rUva87wFEeuWC6pGpwJA8g" comments="_KRJ28LyfEeuWC6pGpwJA8g" targetConnectionVisual="_KRJ28byfEeuWC6pGpwJA8g" name="displayContactDetails">
       <modelElement href="TelephoneDirectory.uml#_qq0T4LwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUva9LwFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUva9bwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
@@ -617,7 +545,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_rUva_LwFEeuWC6pGpwJA8g" comments="_rUhYMLwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUhYMbwFEeuWC6pGpwJA8g" name="sortAndDisplayData">
+    <operations xmi:id="_rUva_LwFEeuWC6pGpwJA8g" comments="_KRLsILyfEeuWC6pGpwJA8g" targetConnectionVisual="_KROvcLyfEeuWC6pGpwJA8g" name="sortAndDisplayData">
       <modelElement href="TelephoneDirectory.uml#_qr7uMLwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUva_bwFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUva_rwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
@@ -629,7 +557,7 @@
         </type>
       </parameters>
     </operations>
-    <operations xmi:id="_rUvbArwFEeuWC6pGpwJA8g" comments="_rUimULwFEeuWC6pGpwJA8g" targetConnectionVisual="_rUimUbwFEeuWC6pGpwJA8g" name="displayByRange">
+    <operations xmi:id="_rUvbArwFEeuWC6pGpwJA8g" comments="_KRQkoLyfEeuWC6pGpwJA8g" targetConnectionVisual="_KRRLsLyfEeuWC6pGpwJA8g" name="displayByRange">
       <modelElement href="TelephoneDirectory.uml#_qsGGQLwFEeuWC6pGpwJA8g"/>
       <visibility xmi:id="_rUvbA7wFEeuWC6pGpwJA8g" label="-"/>
       <cardinality xmi:id="_rUvbBLwFEeuWC6pGpwJA8g" label="1" max="1" min="1"/>
@@ -1902,5 +1830,77 @@
         <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </type>
     </attributes>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KPZjcLyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KPd04LyfEeuWC6pGpwJA8g" text="Telephone Directory Class - &#xD;&#xA;main composition of the app&#xD;&#xA;@author Ismail&#xD;&#xA; *" item="_rUuzkLwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH3_ILyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KPjUcLyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KP89ELyfEeuWC6pGpwJA8g" text="Telephone Directory constructor" item="_rUuzorwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH4mMLyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KP-yQLyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KP_ZULyfEeuWC6pGpwJA8g" text="request user actions and listen for response" item="_rUuzqLwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH4mMbyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQAncLyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQAncbyfEeuWC6pGpwJA8g" text="Displays help about Telephone Directory cmdlets" item="_rUuzq7wFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH4mMryfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQB1kLyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQCcoLyfEeuWC6pGpwJA8g" text="creates a new contact&#xD;&#xA;&#x9; * and save to the database" item="_rUuzrrwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH5NQLyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQDqwLyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQDqwbyfEeuWC6pGpwJA8g" text="list all contacts in the Telephone Directory" item="_rUuzsbwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH5NQbyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQE44LyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQFf8LyfEeuWC6pGpwJA8g" text="find contact by query&lt;br>&#xD;&#xA;&#x9; * prompts user for:&#xD;&#xA;&#x9; * &lt;ul>&#xD;&#xA;&#x9; * &#x9;&lt;li>query string&lt;/li>&#xD;&#xA;&#x9; * &#x9;&lt;li>find exact match&lt;/li>&#xD;&#xA;&#x9; * &#x9;&lt;li>find all possible match&lt;/li>&#xD;&#xA;&#x9; * &lt;/ul>" item="_rUuztLwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH5NQryfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQH8MLyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQIjQLyfEeuWC6pGpwJA8g" text="kill or stop running application" item="_rUvaobwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH5NQ7yfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQKYcLyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQKYcbyfEeuWC6pGpwJA8g" text="generate an object map &#xD;&#xA;&#x9; * &lt;ul>&#xD;&#xA;&#x9; * &#x9;&lt;li>whose keys ranges from 0 to Z char&lt;/li> &#xD;&#xA;&#x9; * &#x9;&lt;li>holds boolean value - true or false&lt;/li>&#xD;&#xA;&#x9; * &lt;/ul>&#xD;&#xA;&#x9; * @return Map" item="_rUvapLwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH5NRbyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQLmkLyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQMNoLyfEeuWC6pGpwJA8g" text="prompt user to enter search query&lt;br>" item="_rUvaqrwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH50UbyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQNbwLyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQOC0LyfEeuWC6pGpwJA8g" text="prompt user to enter details for a new contact&lt;br>&#xD;&#xA;&#x9; * &lt;small>prompt for &lt;i>firstname, lastname, phone&lt;/i>&lt;/small>&#xD;&#xA;&#x9; * @return a new contact object" item="_rUvar7wFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH50UryfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQPQ8LyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQPQ8byfEeuWC6pGpwJA8g" text="prompt user for action to either find all matches to query,&#xD;&#xA;&#x9; * find the exact match or quit app&#xD;&#xA;&#x9; * @return boolean" item="_rUvatLwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH50U7yfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQQfELyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQiy8LyfEeuWC6pGpwJA8g" text="A wrapper arround System.out.println. &#xD;&#xA;&#x9; * Prints string data to the console&#xD;&#xA;&#x9; * @param data" item="_rUvaubwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH50VryfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQkoILyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQlPMLyfEeuWC6pGpwJA8g" text="print data inline" item="_rUvav7wFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH6bYLyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQmdULyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQnEYLyfEeuWC6pGpwJA8g" text="print an empty line to std-output" item="_rUvaxbwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH6bYbyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQquwLyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQrV0LyfEeuWC6pGpwJA8g" text="&lt;p>&lt;i>visual que&lt;/i>&lt;/p>&#xD;&#xA;&#x9; * imitate application startup progress feedback" item="_rUvayLwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH6bYryfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQtLALyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQtLAbyfEeuWC6pGpwJA8g" text="&lt;p>&lt;i>visual que&lt;/i>&lt;/p>&#xD;&#xA;&#x9; * imitate application exit progress feedback" item="_rUvay7wFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH6bY7yfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KQxccLyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KQ28ALyfEeuWC6pGpwJA8g" text="display total execution time after a task &#xD;&#xA;&#x9; * @param startTime&#xD;&#xA;&#x9; * @param endTime" item="_rUvazrwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH8QkLyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KRBUELyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KRBUEbyfEeuWC6pGpwJA8g" text="display a single contact object to console&#xD;&#xA;&#x9; * @param response" item="_rUva17wFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH50ULyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KRDwULyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KREXYLyfEeuWC6pGpwJA8g" text="request more actions on a contact&#xD;&#xA;&#x9; * (U)pdate, (D)elete, (B)ack to main menu, (Q)uit app &#xD;&#xA;&#x9; * @return" item="_rUva3bwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH50VLyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KRGMkLyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KRGzoLyfEeuWC6pGpwJA8g" text="Delete contact from Telephone Directory&#xD;&#xA;&#x9; * @param uid&#xD;&#xA;&#x9; * @return boolean" item="_rUva47wFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH50VbyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KRJ28LyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KRJ28byfEeuWC6pGpwJA8g" text="parse and print contact object to console&#xD;&#xA;&#x9; * @param i&#xD;&#xA;&#x9; * @param contact" item="_rUva87wFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH8QkbyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KRLsILyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KROvcLyfEeuWC6pGpwJA8g" text="sort and display a list of contacts to the console&#xD;&#xA;&#x9; * @param contactList" item="_rUva_LwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH5NRLyfEeuWC6pGpwJA8g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_KRQkoLyfEeuWC6pGpwJA8g" sourceConnectionVisual="_KRRLsLyfEeuWC6pGpwJA8g" text="track and display range 0 - Z to console&#xD;&#xA;&#x9; * @param range&#xD;&#xA;&#x9; * @param contact" item="_rUvbArwFEeuWC6pGpwJA8g">
+    <modelElement href="TelephoneDirectory.uml#_KH5NRryfEeuWC6pGpwJA8g"/>
   </nodes>
 </com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

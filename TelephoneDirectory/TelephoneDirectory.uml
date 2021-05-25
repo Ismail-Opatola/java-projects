@@ -4,7 +4,7 @@
     <eAnnotations xmi:id="_pGYFoLwFEeuWC6pGpwJA8g" source="http://ns.yatta.de/umllab">
       <contents xmi:type="ecore:EAnnotation" xmi:id="_pGYssLwFEeuWC6pGpwJA8g" source="codegen">
         <details xmi:id="_pGYssbwFEeuWC6pGpwJA8g" key="codegenDirectory" value="/TelephoneDirectory/src/main/java"/>
-        <details xmi:id="_rNhYULwFEeuWC6pGpwJA8g" key="AssociatedSourceCode" value="/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/BiConsumer.java;863468441/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/ConsoleColors.java;2899834670/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/Contact.java;3302249086/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/Database.java;651428957/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/FileHandler.java;2334891081/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/Helpers.java;623207627/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/IDatabase.java;3046229145/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/Main.java;2105891403/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/TelephoneDirectory.java;852020342/1;"/>
+        <details xmi:id="_rNhYULwFEeuWC6pGpwJA8g" key="AssociatedSourceCode" value="/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/BiConsumer.java;863468441/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/ConsoleColors.java;2899834670/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/Contact.java;3302249086/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/Database.java;651428957/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/FileHandler.java;2334891081/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/Helpers.java;623207627/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/IDatabase.java;3046229145/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/Main.java;2105891403/1;/TelephoneDirectory/src/main/java/com/telephonedirectorypackage/TelephoneDirectory.java;2708061665/1;"/>
       </contents>
     </eAnnotations>
     <elementImport xmi:id="_qcgyILwFEeuWC6pGpwJA8g">
@@ -967,7 +967,7 @@ compare and loop data&#xD;
           </ownedOperation>
         </packagedElement>
         <packagedElement xmi:type="uml:Class" xmi:id="_qi1ckLwFEeuWC6pGpwJA8g" name="TelephoneDirectory">
-          <ownedComment xmi:id="_qvTLQLwFEeuWC6pGpwJA8g">
+          <ownedComment xmi:id="_KH3_ILyfEeuWC6pGpwJA8g">
             <body>Telephone Directory Class - &#xD;
 main composition of the app&#xD;
 @author Ismail&#xD;
@@ -977,7 +977,9 @@ main composition of the app&#xD;
           <ownedAttribute xmi:id="_qtzWcLwFEeuWC6pGpwJA8g" name="db" visibility="package" type="_qgiWgLwFEeuWC6pGpwJA8g" association="_qvq-sbwFEeuWC6pGpwJA8g"/>
           <ownedAttribute xmi:id="_qt1LoLwFEeuWC6pGpwJA8g" name="helpers" visibility="package" type="_qhpw0LwFEeuWC6pGpwJA8g" association="_qvsM0LwFEeuWC6pGpwJA8g"/>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qvCFgLwFEeuWC6pGpwJA8g" name="TelephoneDirectory" specification="_qi4f4LwFEeuWC6pGpwJA8g">
-            <ownedParameter xmi:id="_qvCFgbwFEeuWC6pGpwJA8g" type="_qi1ckLwFEeuWC6pGpwJA8g" direction="return"/>
+            <ownedParameter xmi:id="_qvCFgbwFEeuWC6pGpwJA8g" type="_qi1ckLwFEeuWC6pGpwJA8g" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
             <language>java</language>
             <body>helpers = new Helpers();&#xD;
 		// initialize scanner&#xD;
@@ -1174,7 +1176,9 @@ main composition of the app&#xD;
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qvEhwLwFEeuWC6pGpwJA8g" name="generateMapOfRange0ToZ" specification="_qjAbsLwFEeuWC6pGpwJA8g">
-            <ownedParameter xmi:id="_qvEhwbwFEeuWC6pGpwJA8g" type="_qqjOILwFEeuWC6pGpwJA8g" direction="return"/>
+            <ownedParameter xmi:id="_qvEhwbwFEeuWC6pGpwJA8g" type="_qqjOILwFEeuWC6pGpwJA8g" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
             <language>java</language>
             <body>final Map&lt;Character, Boolean> range = new HashMap&lt;Character, Boolean>();&#xD;
 		range.put('A', false);&#xD;
@@ -1242,6 +1246,7 @@ main composition of the app&#xD;
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qvFv4LwFEeuWC6pGpwJA8g" name="requestQuery" specification="_qjEGELwFEeuWC6pGpwJA8g">
             <ownedParameter xmi:id="_qvFv4bwFEeuWC6pGpwJA8g" direction="return">
+              <name xsi:nil="true"/>
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
             </ownedParameter>
             <language>java</language>
@@ -1256,7 +1261,9 @@ main composition of the app&#xD;
 	</body>
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qvKoYLwFEeuWC6pGpwJA8g" name="requestNewContactDetails" specification="_qjGiULwFEeuWC6pGpwJA8g">
-            <ownedParameter xmi:id="_qvKoYbwFEeuWC6pGpwJA8g" type="_qfBTkLwFEeuWC6pGpwJA8g" direction="return"/>
+            <ownedParameter xmi:id="_qvKoYbwFEeuWC6pGpwJA8g" type="_qfBTkLwFEeuWC6pGpwJA8g" direction="return">
+              <name xsi:nil="true"/>
+            </ownedParameter>
             <language>java</language>
             <body>String firstname = null;&#xD;
 		String lastname = null;&#xD;
@@ -1291,6 +1298,7 @@ main composition of the app&#xD;
           </ownedBehavior>
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qvLPcLwFEeuWC6pGpwJA8g" name="askToFindAllMatch" specification="_qjHwcLwFEeuWC6pGpwJA8g">
             <ownedParameter xmi:id="_qvLPcbwFEeuWC6pGpwJA8g" direction="return">
+              <name xsi:nil="true"/>
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Boolean"/>
             </ownedParameter>
             <language>java</language>
@@ -1359,6 +1367,7 @@ main composition of the app&#xD;
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qvL2grwFEeuWC6pGpwJA8g" name="deleteContact" specification="_qqrxALwFEeuWC6pGpwJA8g">
             <ownedParameter xmi:id="_qvL2g7wFEeuWC6pGpwJA8g" name="contact" type="_qfBTkLwFEeuWC6pGpwJA8g"/>
             <ownedParameter xmi:id="_qvL2hLwFEeuWC6pGpwJA8g" direction="return">
+              <name xsi:nil="true"/>
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
             </ownedParameter>
             <language>java</language>
@@ -1396,6 +1405,7 @@ main composition of the app&#xD;
           <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_qvMdkLwFEeuWC6pGpwJA8g" name="updateContact" specification="_qquNQLwFEeuWC6pGpwJA8g">
             <ownedParameter xmi:id="_qvMdkbwFEeuWC6pGpwJA8g" name="oldContact" type="_qfBTkLwFEeuWC6pGpwJA8g"/>
             <ownedParameter xmi:id="_qvMdkrwFEeuWC6pGpwJA8g" direction="return">
+              <name xsi:nil="true"/>
               <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
             </ownedParameter>
             <language>java</language>
@@ -1549,34 +1559,34 @@ main composition of the app&#xD;
             <eAnnotations xmi:id="_qi5G8LwFEeuWC6pGpwJA8g" source="http://www.eclipse.org/uml2/2.0.0/UML">
               <details xmi:id="_qi5G8bwFEeuWC6pGpwJA8g" key="create"/>
             </eAnnotations>
-            <ownedComment xmi:id="_qvTLQbwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH4mMLyfEeuWC6pGpwJA8g">
               <body>Telephone Directory constructor</body>
             </ownedComment>
             <ownedParameter xmi:id="_qi6VELwFEeuWC6pGpwJA8g" type="_qi1ckLwFEeuWC6pGpwJA8g" direction="return"/>
           </ownedOperation>
           <ownedOperation xmi:id="_qi68ILwFEeuWC6pGpwJA8g" name="askQuestion" visibility="private" method="_qvCskLwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvTLQrwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH4mMbyfEeuWC6pGpwJA8g">
               <body>request user actions and listen for response</body>
             </ownedComment>
           </ownedOperation>
           <ownedOperation xmi:id="_qi8KQLwFEeuWC6pGpwJA8g" name="help" method="_qvCskbwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvTLQ7wFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH4mMryfEeuWC6pGpwJA8g">
               <body>Displays help about Telephone Directory cmdlets</body>
             </ownedComment>
           </ownedOperation>
           <ownedOperation xmi:id="_qi8xULwFEeuWC6pGpwJA8g" name="newContact" method="_qvCskrwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvTyULwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH5NQLyfEeuWC6pGpwJA8g">
               <body>creates a new contact&#xD;
 	 * and save to the database</body>
             </ownedComment>
           </ownedOperation>
           <ownedOperation xmi:id="_qi9YYLwFEeuWC6pGpwJA8g" name="list" method="_qvDToLwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvTyUbwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH5NQbyfEeuWC6pGpwJA8g">
               <body>list all contacts in the Telephone Directory</body>
             </ownedComment>
           </ownedOperation>
           <ownedOperation xmi:id="_qi9_cLwFEeuWC6pGpwJA8g" name="find" method="_qvDTobwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvTyUrwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH5NQryfEeuWC6pGpwJA8g">
               <body>find contact by query&lt;br>&#xD;
 	 * prompts user for:&#xD;
 	 * &lt;ul>&#xD;
@@ -1587,12 +1597,12 @@ main composition of the app&#xD;
             </ownedComment>
           </ownedOperation>
           <ownedOperation xmi:id="_qi_NkLwFEeuWC6pGpwJA8g" name="quit" method="_qvDTorwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvTyU7wFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH5NQ7yfEeuWC6pGpwJA8g">
               <body>kill or stop running application</body>
             </ownedComment>
           </ownedOperation>
           <ownedOperation xmi:id="_qjAbsLwFEeuWC6pGpwJA8g" name="generateMapOfRange0ToZ" visibility="private" method="_qvEhwLwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvUZYLwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH5NRbyfEeuWC6pGpwJA8g">
               <body>generate an object map &#xD;
 	 * &lt;ul>&#xD;
 	 * 	&lt;li>whose keys ranges from 0 to Z char&lt;/li> &#xD;
@@ -1603,7 +1613,7 @@ main composition of the app&#xD;
             <ownedParameter xmi:id="_qsFfMLwFEeuWC6pGpwJA8g" type="_qqjOILwFEeuWC6pGpwJA8g" direction="return"/>
           </ownedOperation>
           <ownedOperation xmi:id="_qjEGELwFEeuWC6pGpwJA8g" name="requestQuery" visibility="private" method="_qvFv4LwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvUZY7wFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH50UbyfEeuWC6pGpwJA8g">
               <body>prompt user to enter search query&lt;br></body>
             </ownedComment>
             <ownedParameter xmi:id="_qjF7QLwFEeuWC6pGpwJA8g" direction="return">
@@ -1611,7 +1621,7 @@ main composition of the app&#xD;
             </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:id="_qjGiULwFEeuWC6pGpwJA8g" name="requestNewContactDetails" visibility="private" method="_qvKoYLwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvVAcLwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH50UryfEeuWC6pGpwJA8g">
               <body>prompt user to enter details for a new contact&lt;br>&#xD;
 	 * &lt;small>prompt for &lt;i>firstname, lastname, phone&lt;/i>&lt;/small>&#xD;
 	 * @return a new contact object</body>
@@ -1619,7 +1629,7 @@ main composition of the app&#xD;
             <ownedParameter xmi:id="_qqqi4LwFEeuWC6pGpwJA8g" type="_qfBTkLwFEeuWC6pGpwJA8g" direction="return"/>
           </ownedOperation>
           <ownedOperation xmi:id="_qjHwcLwFEeuWC6pGpwJA8g" name="askToFindAllMatch" visibility="private" method="_qvLPcLwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvVAcbwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH50U7yfEeuWC6pGpwJA8g">
               <body>prompt user for action to either find all matches to query,&#xD;
 	 * find the exact match or quit app&#xD;
 	 * @return boolean</body>
@@ -1629,7 +1639,7 @@ main composition of the app&#xD;
             </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:id="_qjWZ8LwFEeuWC6pGpwJA8g" name="sendFeedback" visibility="private" method="_qvMdk7wFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvVAdLwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH50VryfEeuWC6pGpwJA8g">
               <body>A wrapper arround System.out.println. &#xD;
 	 * Prints string data to the console&#xD;
 	 * @param data</body>
@@ -1639,7 +1649,7 @@ main composition of the app&#xD;
             </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:id="_qjXoELwFEeuWC6pGpwJA8g" name="sendFeedbackInline" visibility="private" method="_qvNEoLwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvVngLwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH6bYLyfEeuWC6pGpwJA8g">
               <body>print data inline</body>
             </ownedComment>
             <ownedParameter xmi:id="_qjXoEbwFEeuWC6pGpwJA8g" name="data">
@@ -1647,24 +1657,24 @@ main composition of the app&#xD;
             </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:id="_qjY2MLwFEeuWC6pGpwJA8g" name="displayBlankLine" visibility="private" method="_qvNEorwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvVngbwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH6bYbyfEeuWC6pGpwJA8g">
               <body>print an empty line to std-output</body>
             </ownedComment>
           </ownedOperation>
           <ownedOperation xmi:id="_qjZdQLwFEeuWC6pGpwJA8g" name="launchAppStaticFeedback" visibility="private" method="_qvNEo7wFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvVngrwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH6bYryfEeuWC6pGpwJA8g">
               <body>&lt;p>&lt;i>visual que&lt;/i>&lt;/p>&#xD;
 	 * imitate application startup progress feedback</body>
             </ownedComment>
           </ownedOperation>
           <ownedOperation xmi:id="_qjaEULwFEeuWC6pGpwJA8g" name="killAppStaticFeedback" visibility="private" method="_qvNrsLwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvVng7wFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH6bY7yfEeuWC6pGpwJA8g">
               <body>&lt;p>&lt;i>visual que&lt;/i>&lt;/p>&#xD;
 	 * imitate application exit progress feedback</body>
             </ownedComment>
           </ownedOperation>
           <ownedOperation xmi:id="_qjbScLwFEeuWC6pGpwJA8g" name="sendExecutionTimeFeedback" visibility="private" method="_qvNrsbwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvVnhLwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH8QkLyfEeuWC6pGpwJA8g">
               <body>display total execution time after a task &#xD;
 	 * @param startTime&#xD;
 	 * @param endTime</body>
@@ -1677,14 +1687,14 @@ main composition of the app&#xD;
             </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:id="_qqp70LwFEeuWC6pGpwJA8g" name="displayData" visibility="private" method="_qvFI0LwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvUZYrwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH50ULyfEeuWC6pGpwJA8g">
               <body>display a single contact object to console&#xD;
 	 * @param response</body>
             </ownedComment>
             <ownedParameter xmi:id="_qqp70bwFEeuWC6pGpwJA8g" name="response" type="_qfBTkLwFEeuWC6pGpwJA8g"/>
           </ownedOperation>
           <ownedOperation xmi:id="_qqrJ8LwFEeuWC6pGpwJA8g" name="requestMoreAction" visibility="private" method="_qvL2gLwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvVAcrwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH50VLyfEeuWC6pGpwJA8g">
               <body>request more actions on a contact&#xD;
 	 * (U)pdate, (D)elete, (B)ack to main menu, (Q)uit app &#xD;
 	 * @return</body>
@@ -1692,7 +1702,7 @@ main composition of the app&#xD;
             <ownedParameter xmi:id="_qqrJ8bwFEeuWC6pGpwJA8g" name="contact" type="_qfBTkLwFEeuWC6pGpwJA8g"/>
           </ownedOperation>
           <ownedOperation xmi:id="_qqrxALwFEeuWC6pGpwJA8g" name="deleteContact" method="_qvL2grwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvVAc7wFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH50VbyfEeuWC6pGpwJA8g">
               <body>Delete contact from Telephone Directory&#xD;
 	 * @param uid&#xD;
 	 * @return boolean</body>
@@ -1709,7 +1719,7 @@ main composition of the app&#xD;
             </ownedParameter>
           </ownedOperation>
           <ownedOperation xmi:id="_qq0T4LwFEeuWC6pGpwJA8g" name="displayContactDetails" visibility="private" method="_qvOSwLwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvVnhbwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH8QkbyfEeuWC6pGpwJA8g">
               <body>parse and print contact object to console&#xD;
 	 * @param i&#xD;
 	 * @param contact</body>
@@ -1720,14 +1730,14 @@ main composition of the app&#xD;
             <ownedParameter xmi:id="_qq0T4rwFEeuWC6pGpwJA8g" name="contact" type="_qfBTkLwFEeuWC6pGpwJA8g"/>
           </ownedOperation>
           <ownedOperation xmi:id="_qr7uMLwFEeuWC6pGpwJA8g" name="sortAndDisplayData" visibility="private" method="_qvD6sLwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvTyVLwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH5NRLyfEeuWC6pGpwJA8g">
               <body>sort and display a list of contacts to the console&#xD;
 	 * @param contactList</body>
             </ownedComment>
             <ownedParameter xmi:id="_qr8VQLwFEeuWC6pGpwJA8g" name="contactList" type="_qpO_gLwFEeuWC6pGpwJA8g"/>
           </ownedOperation>
           <ownedOperation xmi:id="_qsGGQLwFEeuWC6pGpwJA8g" name="displayByRange" visibility="private" method="_qvEhwrwFEeuWC6pGpwJA8g">
-            <ownedComment xmi:id="_qvUZYbwFEeuWC6pGpwJA8g">
+            <ownedComment xmi:id="_KH5NRryfEeuWC6pGpwJA8g">
               <body>track and display range 0 - Z to console&#xD;
 	 * @param range&#xD;
 	 * @param contact</body>
